@@ -3,124 +3,155 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ROGEL FM CILACAP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ROGEL FM CILACAP - Emang di Sayang</title>
+
 <style>
 *{box-sizing:border-box}
 body{
  margin:0;
  font-family:Arial,sans-serif;
+ background:#071b36;
  color:white;
- background:linear-gradient(145deg,#07152f,#142b65,#35136d);
- min-height:100vh;
 }
 header{
  text-align:center;
- padding:35px 15px 20px;
+ padding:28px 15px 20px;
+ background:linear-gradient(135deg,#087eaa,#071b36);
 }
 .logo{
- width:115px;height:115px;
- border-radius:50%;
- border:4px solid #bda5ff;
- background:linear-gradient(135deg,#6c2bdd,#087eaa);
- display:flex;align-items:center;justify-content:center;
- margin:auto;font-size:35px;font-weight:bold;
- box-shadow:0 0 30px #8656ff;
+ width:170px;
+ max-width:70%;
+ height:auto;
+ object-fit:contain;
+ display:block;
+ margin:auto;
 }
-h1{font-size:32px;margin:18px 0 5px}
-.tagline{color:#e3d6ff;font-size:16px}
+.slogan{
+ color:#ffd84d;
+ font-size:21px;
+ font-weight:bold;
+ margin-top:12px;
+}
 .container{
- max-width:480px;margin:auto;padding:15px;
-}
-.panel{
- background:rgba(255,255,255,.10);
- border:1px solid rgba(255,255,255,.18);
- border-radius:22px;
- padding:22px 17px;
- text-align:center;
- box-shadow:0 12px 35px #0005;
-}
-.live{
- color:#ff7070;font-weight:bold;
- letter-spacing:2px;margin-bottom:12px;
-}
-.equalizer{
- font-size:35px;color:#d6baff;
- margin:12px;
+ max-width:520px;
+ margin:auto;
+ padding:18px 15px;
 }
 .player{
- background:white;color:#222;
- padding:15px;border-radius:15px;
- margin:15px 0;
-}
-.player .cstrEmbed{width:100%}
-.info{
- margin-top:22px;
- padding:20px;
+ background:white;
+ border-radius:15px;
+ padding:14px;
+ margin:10px 0 25px;
  text-align:center;
- background:#ffffff12;
- border-radius:18px;
 }
-.info h2{color:#e4d0ff}
-.wa{
- display:inline-block;
- margin-top:18px;
- background:#16bd69;
- color:white;text-decoration:none;
- padding:13px 25px;
- border-radius:30px;font-weight:bold;
+.radio-name{
+ text-align:center;
+ font-size:27px;
+ font-weight:bold;
+ color:#ffffff;
+ margin:18px 0 8px;
+}
+.dj{
+ display:block;
+ text-align:center;
+ background:#087eaa;
+ color:white;
+ text-decoration:none;
+ padding:14px;
+ border-radius:30px;
+ font-weight:bold;
+ margin:22px auto;
+ max-width:260px;
+}
+.description{
+ background:#102d50;
+ border:1px solid #31577c;
+ padding:20px;
+ border-radius:15px;
+ line-height:1.7;
+ text-align:center;
+}
+.description h2{
+ color:#ffd84d;
+ font-size:20px;
 }
 footer{
- text-align:center;padding:28px 10px;
- color:#c7b9e8;font-size:13px;
+ text-align:center;
+ padding:25px 10px;
+ color:#b5c9df;
+ font-size:13px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
- <div class="logo">RF</div>
- <h1>ROGEL FM</h1>
- <div class="tagline">CILACAP • EMANG DI SAYANG</div>
+
+ <!-- GANTI NAMA FILE INI DENGAN FILE LOGO ASLI -->
+ <img src="logo-rogel-fm.png"
+      alt="Logo ROGEL FM"
+      class="logo">
+
+ <div class="slogan">EMANG DI SAYANG</div>
+
 </header>
 
-<div class="container">
- <div class="panel">
-  <div class="live">● LIVE RADIO</div>
-  <h2>RADIO ONLINE</h2>
-  <div class="equalizer">♫ ♪ ♫ ♪ ♫</div>
-  <p>Teman setia hiburan dan informasi Anda.</p>
+<main class="container">
 
-  <div class="player">
-   <div class="cstrEmbed"
-    data-type="newStreamPlayer"
-    data-publicToken="ac965b7b-8b3a-4db7-92c7-7bd60762f3c0"
-    data-theme="light"
-    data-color="6C2BDD"
-    data-channelId=""
-    data-rendered="false">
-    <a href="https://www.caster.fm">Caster.fm</a>
-   </div>
+ <!-- PLAYER RESMI CASTER.FM -->
+ <div class="player">
+
+  <div class="cstrEmbed"
+   data-type="newStreamPlayer"
+   data-publicToken="ac965b7b-8b3a-4db7-92c7-7bd60762f3c0"
+   data-theme="light"
+   data-color="6C2BDD"
+   data-channelId=""
+   data-rendered="false">
+
+   <a href="https://www.caster.fm">Shoutcast Hosting</a>
+   <a href="https://www.caster.fm">Stream Hosting</a>
+   <a href="https://www.caster.fm">Radio Server Hosting</a>
+
   </div>
 
-  <p>Tekan tombol PLAY untuk mendengarkan siaran.</p>
  </div>
 
- <div class="info">
-  <h2>ROGEL FM CILACAP</h2>
-  <p>Emang di Sayang ❤️</p>
-  <p>Media Informasi dan Hiburan</p>
-  <a class="wa"
-   href="https://wa.me/6285137397668"
-   target="_blank">CHAT WHATSAPP</a>
+ <div class="radio-name">
+  ROGEL FM CILACAP
  </div>
-</div>
+
+ <!-- NOMOR WHATSAPP BISA DIGANTI -->
+ <a class="dj"
+ href="https://wa.me/62NOMORHP"
+ target="_blank">
+ CHAT DJ
+ </a>
+
+ <section class="description">
+  <h2>TENTANG ROGEL FM</h2>
+
+  <p>
+   ROGEL FM CILACAP adalah radio online
+   yang hadir sebagai teman hiburan dan informasi.
+   Menyajikan musik, lagu pilihan, dan hiburan
+   untuk menemani aktivitas pendengar di mana saja.
+  </p>
+
+  <p>
+   ROGEL FM — EMANG DI SAYANG!
+  </p>
+ </section>
+
+</main>
 
 <footer>
  © 2026 ROGEL FM CILACAP
-<br>Terima kasih sudah mendengarkan.
 </footer>
 
 <script src="https://cdn.cloud.caster.fm/widgets/embed.js"></script>
+
 </body>
 </html>
